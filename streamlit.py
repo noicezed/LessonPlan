@@ -15,4 +15,5 @@ with st.form('my_form'):
         with st.spinner("waiting"):
             response =  requests.post(url='https://lessonplan-obpx.onrender.com/lessonplan/' , data=json.dumps(input_data))
 
-            st.info(response.text)
+            modified_string = response.text.replace("\\n", "\n")
+            st.info(modified_string)
