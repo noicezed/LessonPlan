@@ -25,8 +25,7 @@ async def lessonplan(query:Query):
         print("\n\n########################")
         print(f"## Here is the Lesson for {subject} and {grade} ")
         print("########################\n")
-        print(response)
-        return {"detail":f'{response}'}
+        return response
     except Exception as e:
         raise HTTPException(status_code=400, detail=e)
 
