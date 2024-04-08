@@ -4,7 +4,7 @@ import json
 
 
 st.title('Summaries Agent and LessonPlan Agent 📚')
-st.subheader("Since I'm using free render("If API idle for 50 sec, it will inactivity.")  for API hosting this takes time to run. So run twice or thrice: ")
+st.subheader("Since I'm using free render(If API idle for 50 sec, it will inactivity.)  for API hosting this takes time to run. So run twice or thrice: ")
 
 with st.form('my_form'):
     subject = st.text_area('Which Subject Summaries? ')
